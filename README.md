@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with RoamX (https://tourism-website-34d31.web.app/)
+
+- This gives Intensive information regarding travel
+- additonal visa service
+- transport service
+- air ticketing service
+- 24/7 helpline for customer support.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
