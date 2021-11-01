@@ -8,7 +8,7 @@ const useCart = () => {
 	const [selectedTour, setSelectedTour] = useState([]);
 
 	useEffect(() => {
-		fetch(`http://localhost:5000/cart/${uid}`)
+		fetch(`https://radiant-hollows-38398.herokuapp.com/cart/${uid}`)
 			.then((res) => res.json())
 			.then((data) => {
 				if (data.length) {
@@ -27,7 +27,7 @@ const useCart = () => {
 		if (isHave) {
 			alert("Tour Package has been selected!");
 		} else {
-			fetch("http://localhost:5000/cart/add", {
+			fetch("https://radiant-hollows-38398.herokuapp.com/cart/add", {
 				method: "post",
 				headers: { "content-type": "application/json" },
 				body: JSON.stringify(tour),
@@ -44,7 +44,7 @@ const useCart = () => {
 	};
 
 	const deleteSingleReserve = id => {
-		fetch(`http://localhost:5000/cart_delete/${id}`, {
+		fetch(`https://radiant-hollows-38398.herokuapp.com/cart_delete/${id}`, {
 			method: "delete",
 		})
 			.then((res) => res.json())

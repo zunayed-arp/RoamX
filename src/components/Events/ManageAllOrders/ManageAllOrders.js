@@ -12,7 +12,7 @@ const ManageAllOrders = () => {
 	const [orders, setOrders] = useState([])
 	const [tour,setTour] = useState([]);
 	useEffect(() => {
-		fetch('http://localhost:5000/cart')
+		fetch('https://radiant-hollows-38398.herokuapp.com/cart')
 			.then(res => res.json())
 			.then(data => {
 				console.log(data)
@@ -53,7 +53,7 @@ const ManageAllOrders = () => {
 					<button
 						onClick={() => {
 							fetch(
-								`http://localhost:5000/cart_delete_all/${order.uid}`,
+								`https://radiant-hollows-38398.herokuapp.com/cart_delete_all/${order.uid}`,
 								{
 									method: "delete",
 								}

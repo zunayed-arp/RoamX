@@ -8,7 +8,7 @@ const UpdatePackage = () => {
 	const { register, handleSubmit, reset } = useForm();
 
 	useEffect(() => {
-		const url = `http://localhost:5000/packages/${id}`
+		const url = `https://radiant-hollows-38398.herokuapp.com/packages/${id}`
 		fetch(url)
 			.then(res => res.json())
 			.then(data => {
@@ -68,7 +68,7 @@ const UpdatePackage = () => {
 	const onSubmit = data => {
 		console.log(data);
 
-		const url = `http://localhost:5000/packages/${id}`
+		const url = `https://radiant-hollows-38398.herokuapp.com/packages/${id}`
 		fetch(url, {
 			method: 'PUT',
 			headers: {
@@ -76,16 +76,16 @@ const UpdatePackage = () => {
 			},
 			body: JSON.stringify(service)
 		})
-			.then(res=>res.json())
-			.then(data=>{
-			if(data.modifiedCount > 0){
-				alert('Updated Successfully');
-			}
+			.then(res => res.json())
+			.then(data => {
+				if (data.modifiedCount > 0) {
+					alert('Updated Successfully');
+				}
 				console.log(data)
 			})
 
 
-		// axios.post('http://localhost:5000/packages/:id', data)
+		// axios.post('https://radiant-hollows-38398.herokuapp.com/packages/:id', data)
 		// 	.then(res => {
 		// 		if (res.data.insertedId) {
 		// 			alert('Succesfully Added New Service')

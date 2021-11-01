@@ -17,7 +17,7 @@ const AddPackage = () => {
 	const onSubmit = data => {
 		console.log(data);
 
-		axios.post('http://localhost:5000/addPackage', data)
+		axios.post('https://radiant-hollows-38398.herokuapp.com/addPackage', data)
 			.then(res => {
 				if(res.data.insertedId){
 					alert('Succesfully Added New Service')

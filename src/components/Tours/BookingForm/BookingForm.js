@@ -12,7 +12,7 @@ const BookingForm = () => {
 	const onSubmit = data => {
 		console.log(data);
 
-		axios.post('http://localhost:5000/booking', data)
+		axios.post('https://radiant-hollows-38398.herokuapp.com/booking', data)
 			.then(res => {
 				console.log(res)
 			})

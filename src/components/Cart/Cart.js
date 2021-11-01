@@ -39,7 +39,7 @@ const Cart = () => {
 
 
 	useEffect(() => {
-		const url = `http://localhost:5000/cart/${uid}`
+		const url = `https://radiant-hollows-38398.herokuapp.com/cart/${uid}`
 		fetch(url)
 			.then(res => res.json())
 			.then(data => {
@@ -70,7 +70,7 @@ const Cart = () => {
 							<button
 								onClick={() => {
 									fetch(
-										`http://localhost:5000/cart_delete_all/${uid}`,
+										`https://radiant-hollows-38398.herokuapp.com/cart_delete_all/${uid}`,
 										{
 											method: "delete",
 										}

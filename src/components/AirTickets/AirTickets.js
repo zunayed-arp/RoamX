@@ -6,7 +6,7 @@ const AirTickets = () => {
 	const [tickets, setTickets] = useState([]);
 
 	useEffect(() => {
-		const url = `http://localhost:5000/airticket`
+		const url = `https://radiant-hollows-38398.herokuapp.com/airticket`
 		fetch(url)
 			.then(res => res.json())
 			.then(data => {

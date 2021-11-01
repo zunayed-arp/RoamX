@@ -8,7 +8,7 @@ const useTours = () => {
 	// console.log(tours)
 	
 	useEffect(() => {
-		fetch('http://localhost:5000/packages')
+		fetch('https://radiant-hollows-38398.herokuapp.com/packages')
 			.then(res => res.json())
 			.then(data => {
 				// console.log(data);

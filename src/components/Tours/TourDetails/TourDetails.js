@@ -13,7 +13,7 @@ const TourDetails = () => {
 	const { uid } = user;
 
 	useEffect(() => {
-		fetch(`http://localhost:5000/packages/${id}`)
+		fetch(`https://radiant-hollows-38398.herokuapp.com/packages/${id}`)
 			.then((res) => res.json())
 			.then((data) => {
 				if (data?._id) {
