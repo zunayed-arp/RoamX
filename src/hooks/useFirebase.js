@@ -5,7 +5,6 @@ import {
 	onAuthStateChanged,
 	signInWithPopup,
 	GoogleAuthProvider,
-
 	signInWithEmailAndPassword,
 	sendPasswordResetEmail,
 } from "firebase/auth";
@@ -29,7 +28,7 @@ const useFirebase = () => {
 	const googleProvider = new GoogleAuthProvider();
 
 
-	// // clear error
+	// clear error
 	useEffect(() => {
 		setTimeout(() => {
 			setError("");
@@ -41,7 +40,7 @@ const useFirebase = () => {
 		return signInWithPopup(auth, googleProvider);
 	}
 
-	// // gitHub sign in
+	 // gitHub sign in
 	// const signInWithGithub =()=> {
 	// 	return signInWithPopup(auth, gitHubProvider);
 	// }
@@ -68,7 +67,7 @@ const useFirebase = () => {
 
 	const emailVerify = () => {
 		sendEmailVerification(auth.currentUser).then(() => {
-			alert(`An Verification mail has been set to ${email}`);
+			alert(`A Verification mail has been set to ${email}`);
 		});
 	}
 
@@ -151,6 +150,8 @@ const useFirebase = () => {
 		setUser,
 		setError,
 		signInWithGoogle,
+		loading
+
 	
 	};
 

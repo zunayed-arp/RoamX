@@ -8,8 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import './Footer.css';
-import payment from '../../../assets/images/payment.png';
-import footerLogo from '../../../assets/images/footer-logo.png';
+
 
 
 const Footer = () => {
@@ -54,7 +53,7 @@ const Footer = () => {
 									<NavLink to="/contact">Contact us</NavLink>
 								</li>
 								<li>
-									<NavLink to="/courses">Courses</NavLink>
+									<NavLink to="/destionation">Destinations</NavLink>
 								</li>
 								<li>
 									<NavLink to="/policy">Policy</NavLink>

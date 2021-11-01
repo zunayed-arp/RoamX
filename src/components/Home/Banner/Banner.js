@@ -5,8 +5,6 @@ import banner1 from '../../../assets/images/banner/banner1.jpg';
 import banner2 from '../../../assets/images/banner/banner2.jpg';
 import banner3 from '../../../assets/images/banner/banner3.jpg';
 
-
-
 import './Banner';
 
 

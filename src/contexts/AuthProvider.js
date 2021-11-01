@@ -1,4 +1,5 @@
 import React, { createContext } from 'react';
+import useCart from '../hooks/useCart';
 import useFirebase from '../hooks/useFirebase';
 import useTours from '../hooks/useTours';
 
@@ -10,10 +11,12 @@ const AuthProvider = ({ children }) => {
 
 	const allContexts = useFirebase();
 	const {tours,setTours} = useTours();
+	const { setSelectedTour, deleteSingleReserve, addToCart, selectedTour} = useCart();
 
 	const data = {
 		allContexts,
-		tours,setTours
+		tours,setTours,
+		setSelectedTour,deleteSingleReserve, addToCart, selectedTour
 	}
 
 	return (

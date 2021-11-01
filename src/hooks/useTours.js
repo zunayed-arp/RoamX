@@ -5,18 +5,18 @@ const useTours = () => {
 	// const [totalPage, setTotalPage] = useState(0);
 	// const [currentPage, setCurrentPage] = useState(0);
 	// const size = 9
+	// console.log(tours)
 	
 	useEffect(() => {
-		fetch('/tours.json')
+		fetch('http://localhost:5000/packages')
 			.then(res => res.json())
 			.then(data => {
-				console.log(data);
+				// console.log(data);
 				setTours(data);
-				// const totalData = data.count;
-				// const pages = Math.ceil(totalData/size);
-				// setTotalPage(pages)
+
+		
 			})
-	}, []);
+	}, [tours]);
 
 	return {
 		tours,setTours
